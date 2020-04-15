@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 const middlewares = [
   layout(),
   express.static(path.join(__dirname, 'public')),
-  bodyParser.urlencoded({ extended: true })
+  bodyParser.urlencoded({ extended: true }),
 ];
 app.use(middlewares);
 
